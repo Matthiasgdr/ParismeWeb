@@ -78,12 +78,42 @@ header
                 height: 50%
 
 main
-    height 50vh
     text-align: center
     h2
         margin: 50px
-
+    .features-container
+        padding: 100px 0
+        .feature-line
+            padding: 50px 0
+            display flex
+            justify-content center
+            align-items center
+            &:nth-of-type(odd)
+                flex-direction: row-reverse
+            &:nth-of-type(even)
+                background rgba(4,131,116,0.2)
+                flex-direction: row
+            .feature-mockup
+                img
+                    width: 70%
+            .feature-text
+                font-size: huge
+                width: 40%
+                .icon
+                    margin: 0 0 50px 0  
+                    square(100px)
 
 footer 
     background #1e1e1e
-    color white
+    .container
+        padding: 50px 0
+        color white
+        display flex
+        justify-content flex-start
+        width: 80%
+        margin: 0 auto;
+        .item
+            margin: 0 50px 
+            h4 
+                font-size: normal
+                margin: 0 0 20px 0
